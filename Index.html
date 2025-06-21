@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>GameHacker569</title>
+    <script src="Logic.js"></script> <!--link the javascript to this page-->
+    <link rel="stylesheet" href="Styles.css"> <!--link the cascading style sheet to this page-->
+
+</head>
+
+<body>
+    <!--section for the navigation bar (navbar)-->
+    <nav role="navigation" class="navbar" id="PageTop">
+        <a href="Index.html" class="navbarHeader">
+            <img id="ChannelLogo" src="Images/ChannelLogo.png" alt="Channel Logo is Shy Today"/>
+            <p id="ChannelName"><b>GameHacker569</b></p>
+        </a>
+
+        <div class="navbarButtons">
+            <div class="dropdown">
+                <button class="navbarButton">Gaming
+                    <span class="navbarArrow" style="display:inline-flex; align-items:center; margin-left: 4px;">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </button>
+                <div class="dropdown-content_1">
+                    <a href="Gaming/Overwatch/OverwatchHome.html">Overwatch</a>
+                    <a href="Gaming/Zombies/ZombiesHome.html">Call of Duty Zombies</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="navbarButton">Programming
+                    <span class="navbarArrow" style="display:inline-flex; align-items:center; margin-left: 4px;">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </button>
+                <div class="dropdown-content_2">
+                    <a href="Programming/Python/PythonHome.html">Python Projects</a>
+                    <a href="Programming/C%23/C%23Home.html">C# Projects</a>
+                    <a href="Programming/Java/JavaHome.html">Java Projects</a>
+                    <a href="Programming/Unity/UnityHome.html">Unity (Game Design) Projects</a>
+                    <a href="Programming/Other%20Languages/OtherLanguagesHome.html">Other Language Projects</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--section for the main content of the home page-->
+    <main class="HomeMain" id="HomeMain">
+        <h1 class="HomeMainHeader">The Channel</h1>
+        <p class="HomeMainParagraph">
+            This channel is built at the crossroads of code, gaming, and unfiltered passion. As well as delivering content for tech enthusiasts, gamers, and anyone who thrives on high energy and deep dives. Here, you'll find a mix of programming walkthroughs, development insights, and gameplay content that balances logic with adrenaline.
+
+            Expect practical coding tutorials, dev commentary, and behind-the-scenes looks at real-world projects, all created with a commitment to clarity and creativity. On the gaming side, the channel explores both mainstream titles and niche gems, many with an emphasis on gameplay mechanics, strategy, and immersive storytelling.
+
+            Driven by the raw intensity of heavy metal and rock 'n' roll, every piece of content aims to reflect that same bold spirit: loud, deliberate, and unapologetically real. You'll also notice a few nods to the Doberman: a symbol of focus, power, and loyalty. Many of those traits resonate with the channel's mission to stay sharp and deliver value with edge.
+
+            Whether you're here to level up your skills, enjoy smart gaming content, or just vibe with a unique blend of tech and attitude, welcome to the channel I hope you enjoy!
+        </p>
+        <br>
+        <h2 class="HomeMainHeader">About Me</h2>
+        <p class="HomeMainParagraph">
+            My name is Hunter, and I am very passionate about programming, gaming, dogs, music, and game development. These traits shine through in all my work, even the first video on the channel that dated all the way back to May 4, 2016 (which was deleted a few years ago unfortunately).
+
+            I am working on a degree in computer science with a concentration on game design & development, hence the strong interest in both programming and gaming. They've always been a big part of me ever since they were introduced to me whether that was playing games for the first time on the Nintendo's Wii, or the first few python programs I wrote in my second year of college. They continue to push me forward both personally and professionally. Perhaps one day ya'll will see one of my games on Steam for sale.
+        </p>
+        <br>
+
+        <h2 class="HomeMainHeader">View a Random Video</h2>
+        <button id="randomVideo" onclick="RandomVideo()">Click for random video</button>
+        <br>
+    </main>
+
+    <!--section for the bottom footer content of the page-->
+    <footer class="footer">
+        <a href="#" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;" class="footerHomeLink">Home</a>
+        <a href="#" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;" class="footerHomeLink">Return to the Top of the Page</a>
+        <a href="https://www.youtube.com/channel/UCbKlNm4xa34uEjZrPKJBRsQ" class="footerHomeLink">
+            <img src="Images/YouTube%20Logo.jpg" alt="Link to my Youtube Channel" class="footerImage">
+        </a>
+        <a href="https://www.linkedin.com/in/hunter-arcement-a67104280"  class="footerHomeLink">
+            <img src="Images/LinkedIn%20Logo.jpg" alt="Link to my LinkedIn Page (Business Inquiries Only)" class="footerImage">
+        </a>
+
+        <p id="footerCopyright">Copyright 2025 &#169;</p>
+    </footer>
+
+</body>
+
+</html>

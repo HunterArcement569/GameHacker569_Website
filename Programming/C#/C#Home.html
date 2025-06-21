@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>C#</title>
+    <script src="../../Logic.js"></script> <!--link the javascript to this page-->
+    <link rel="stylesheet" href="../../Styles.css"> <!--link the cascading style sheet to this page-->
+
+</head>
+
+<body>
+    <!--section for the navigation bar (navbar)-->
+    <nav role="navigation" class="navbar" id="PageTop">
+        <a href="../../Index.html" class="navbarHeader">
+            <img id="ChannelLogo" src="../../Images/ChannelLogo.png" alt="Channel Logo is Shy Today"/>
+            <p id="ChannelName"><b>GameHacker569</b></p>
+        </a>
+
+        <div class="navbarButtons">
+            <div class="dropdown">
+                <button class="navbarButton">Gaming
+                    <span class="navbarArrow" style="display:inline-flex; align-items:center; margin-left: 4px;">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                </button>
+                <div class="dropdown-content_1">
+                    <a href="../../Gaming/Overwatch/OverwatchHome.html">Overwatch</a>
+                    <a href="../../Gaming/Zombies/ZombiesHome.html">Call of Duty Zombies</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="navbarButton">Programming
+                    <span class="navbarArrow" style="display:inline-flex; align-items:center; margin-left: 4px;">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                </button>
+                <div class="dropdown-content_2">
+                    <a href="../../Programming/Python/PythonHome.html">Python Projects</a>
+                    <a href="../../Programming/C%23/C%23Home.html">C# Projects</a>
+                    <a href="../../Programming/Java/JavaHome.html">Java Projects</a>
+                    <a href="../../Programming/Unity/UnityHome.html">Unity (Game Design) Projects</a>
+                    <a href="../../Programming/Other%20Languages/OtherLanguagesHome.html">Other Language Projects</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--section for the main content of the home page-->
+    <main class="ProjectSection">
+        <h1 class="ProjectHeader">C# Projects</h1>
+        <p class="ProjectHeaderParagraph">As part of my 3rd year college studies in spring 2024, I began learning different technologies in c#, some of these included databases, networking, and websites. Some of the following are inspired from what I learned, and some of it I learned on my own.
+        </p><br>
+
+        <h2 class="ProjectName" id="CSharpDBMS">Population Model Database</h2>
+        <p class="ProjectDescription">Towards the end of my spring 2024 semester, I created a population model using a SQLite database to simulate how a population may change over time. This was not too deep as the mechanic to bring more people into the population was a simple cooldown based on how long a woman had been alive within the population. Death could occur at random so the tendency was for the population to wittle away and go extinct within a few generations.
+        </p>
+        <iframe class="ProjectVideo"
+                width="560" height="315"
+                src="https://www.youtube.com/embed/bJbWeLQAiC4?si=K1KSAY8gPGLjrDSm"
+                title="YouTube video player"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe><br><br>
+
+        <h2 class="ProjectName">Matrix Website</h2>
+        <p class="ProjectDescription">About a month after the population model database, I used some of the knowledge I gained during that semester to create a website that performs many operations such as addition, multiplication, inversion, and rref of matrices. Much of this logic was converted from a Java program I had been writing throughout that semester inspired by my Linear Algebra class.
+        </p>
+        <iframe class="ProjectVideo"
+                width="560" height="315"
+                src="https://www.youtube.com/embed/VB0ceEV0jlg?si=xqKl56s9Obl3_Pea"
+                title="YouTube video player"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe><br><br>
+
+        <h2 class="ProjectName">Player Playlist Executable</h2>
+        <p class="ProjectDescription">During the summer after the matrix website project, I created a song playlist executable. You add the .wav files to the directory, and you can play them from the app. This was the first time I created an executable from my programs and was able to give it to another person to run outside an IDE.
+        </p>
+        <iframe class="ProjectVideo"
+                width="560" height="315"
+                src="https://www.youtube.com/embed/mKn6RGGEazw?si=4RGkiRciEYLAWIjw"
+                title="YouTube video player"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe><br><br>
+
+        <h2 class="ProjectName">Resultant Vector Executables (V1 & V2)</h2>
+        <p class="ProjectDescription">In spring 2025, I had a physics class in college. We were going over how to calculate resultant vectors, I already knew how to so instead I decided to program and create and executable to do it for me. The first version had a couple of flaws that would be fixed with the creation of the second version.
+        </p>
+        <iframe class="ProjectVideo"
+                width="560" height="315"
+                src="https://www.youtube.com/embed/gUhOJQEjcyA?si=t3LbGuwk8kYXJymD"
+                title="YouTube video player"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe><br>
+        <iframe class="ProjectVideo"
+                width="560" height="315"
+                src="https://www.youtube.com/embed/BWk4ugt2L18?si=aTbSCPOhwXw6y00s"
+                title="YouTube video player"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe><br><br>
+
+        <h2 class="ProjectName">File Sharing Database Server</h2>
+        <p class="ProjectDescription">Not too long after the two physics executables, inspired by the computer networking class, I created a database of files and directories that could be shared over a network. This was only ever tested on my localhost, but I was able to send several files and entire directories to another folder. This used json serialization to ensure the contents are in the same format on reception as sent.
+        </p>
+        <iframe class="ProjectVideo"
+                width="560" height="315"
+                src="https://www.youtube.com/embed/_qEhEJIJNeY?si=aIO3gmuK3RdGIBgt"
+                title="YouTube video player"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe><br><br>
+
+        <h2 class="ProjectName">WinForms & WPF</h2>
+        <p class="ProjectDescription">At the end of the spring 2025 semester, I got a job working as a remote programmer/software engineer. My boss informed me to learn WinForms then WPF since I would be using them for the job. These were the two projects that were born from me learning those two technologies.
+        </p>
+        <iframe class="ProjectVideo"
+                width="560" height="315"
+                src="https://www.youtube.com/embed/xbZQ6AfgK7I?si=uBy6KbBA8iKvdkMZ"
+                title="YouTube video player"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe><br>
+        <iframe class="ProjectVideo"
+                width="560" height="315"
+                src="https://www.youtube.com/embed/VBJjLyopTgY?si=sIrHSEKdjVWl7NoA"
+                title="YouTube video player"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe><br>
+    </main>
+
+    <!--section for the bottom footer content of the page-->
+    <footer class="footer">
+        <a href="../../Index.html" class="footerHomeLink">Home</a>
+        <a href="C%23Home.html#PageTop" class="footerHomeLink">Return to the Top of the Page</a>
+        <a href="https://www.youtube.com/channel/UCbKlNm4xa34uEjZrPKJBRsQ" class="footerHomeLink">
+            <img src="../../Images/YouTube%20Logo.jpg" alt="Link to my Youtube Channel" class="footerImage">
+        </a>
+        <a href="https://www.linkedin.com/in/hunter-arcement-a67104280" class="footerHomeLink">
+            <img src="../../Images/LinkedIn%20Logo.jpg" alt="Link to my LinkedIn Page (Business Inquiries Only)" class="footerImage">
+        </a>
+
+        <p id="footerCopyright">Copyright 2025 &#169;</p>
+    </footer>
+
+</body>
+
+</html>

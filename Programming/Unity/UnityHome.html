@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Unity Game Design</title>
+    <script src="../../Logic.js"></script> <!--link the javascript to this page-->
+    <link rel="stylesheet" href="../../Styles.css"> <!--link the cascading style sheet to this page-->
+
+</head>
+
+<body>
+    <!--section for the navigation bar (navbar)-->
+    <nav role="navigation" class="navbar" id="PageTop">
+        <a href="../../Index.html" class="navbarHeader">
+            <img id="ChannelLogo" src="../../Images/ChannelLogo.png" alt="Channel Logo is Shy Today"/>
+            <p id="ChannelName"><b>GameHacker569</b></p>
+        </a>
+
+        <div class="navbarButtons">
+            <div class="dropdown">
+                <button class="navbarButton">Gaming
+                    <span class="navbarArrow" style="display:inline-flex; align-items:center; margin-left: 4px;">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                </button>
+                <div class="dropdown-content_1">
+                    <a href="../../Gaming/Overwatch/OverwatchHome.html">Overwatch</a>
+                    <a href="../../Gaming/Zombies/ZombiesHome.html">Call of Duty Zombies</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="navbarButton">Programming
+                    <span class="navbarArrow" style="display:inline-flex; align-items:center; margin-left: 4px;">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                </button>
+                <div class="dropdown-content_2">
+                    <a href="../../Programming/Python/PythonHome.html">Python Projects</a>
+                    <a href="../../Programming/C%23/C%23Home.html">C# Projects</a>
+                    <a href="../../Programming/Java/JavaHome.html">Java Projects</a>
+                    <a href="../../Programming/Unity/UnityHome.html">Unity (Game Design) Projects</a>
+                    <a href="../../Programming/Other%20Languages/OtherLanguagesHome.html">Other Language Projects</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--section for the main content of the home page-->
+    <main class="ProjectSection">
+        <h1 class="ProjectHeader">Unity Projects</h1>
+        <p class="ProjectHeaderParagraph">After my spring 2023 semester, I learned Java in class, then C# and C++ on my own right before summer. Then, I began teaching myself Unity during the summer, starting with 2D games and applications. Eventually, after a game development class in college, began posting 3D games. There are quite a few ambitious projects that are in various staged of brainstorming behind the scenes, though game development takes time, and they are very far off from hitting Youtube, let alone the market.
+        </p><br>
+
+        <h2 class="ProjectName">Flappy Bird Recreation</h2>
+        <p class="ProjectDescription">This is during the summer in 2023, I am teaching myself Game Development using the Unity Game Engine. This was done using a tutorial on Youtube and some assets from my sister. This taught me many of the basics and as far as a starting point, many of the projects I would go on to work on both for fun and in the two game development classes I have taken in college, it was a fair foundation.
+        </p>
+        <iframe class="ProjectVideo"
+                src="https://www.youtube.com/embed/NimaFodpwEo?si=PxGIA3TiZ8dFfUmt"
+                title="YouTube video player"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe><br><br>
+        <a href="../../Downloadable%20Unity%20Games/Flappy%20Bird%20Recreation.zip" download="Flappy Bird Recreation" class="DownloadLink">
+            <button class="DownloadExeZip">Download Project Exe as Zip Folder</button>
+        </a><br><br>
+
+        <h2 class="ProjectName">Rust Raid Calculator</h2>
+        <p class="ProjectDescription">This project was one at some point when I worked at Little Caesars. My boss got me to play this game <i>Rust: Console Edition</i>. I wanted to learn it fast and be an asset to our small group, so I created this application to help with raiding. Raiding is the act of either picking through or blowing through the base of another player or group of players to take their loot and evict them. The stats are not correct anymore (honestly the wiki's stats were weird, so they may have never been correct). But this also proved the merit of web applications through Unity at a time where all of my other projects were constrained to console applications.
+        </p>
+        <iframe class="ProjectVideo"
+                src="https://www.youtube.com/embed/-X9eXRej_CA?si=zhxOsZrCHwHDvqdp"
+                title="YouTube video player"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe><br><br>
+        <a href="../../Downloadable%20Unity%20Games/Rust%20Raid%20Calculator%20(Values%20Are%20Wrong).zip" download="Rust Raid Calculator (Values are Incorrect)" class="DownloadLink">
+            <button class="DownloadExeZip">Download Project Exe as Zip Folder</button>
+        </a><br><br>
+
+        <h2 class="ProjectName" id="UnityBirthday">Birthday Analysis</h2>
+        <p class="ProjectDescription">The Rust project above led me to recreating the birthday analysis program from python with Unity's UI. Overall, the project turned out fine, though it has a limit of 50 birthdays in storage compared to the limit of the size of a .txt file for the python variant. Frankly if I did this today, I would use several .json files to ensure speend and storage, or use a SQLite database outright. The coding behind was messy and with those small changes plus using prefabs, I could probably cut the code complexity by 50% and make it look better while I am at it!
+        </p>
+        <iframe class="ProjectVideo"
+                src="https://www.youtube.com/embed/pO6sjZSO5P4?si=2JRCfHgPscdd2jPu"
+                title="YouTube video player"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe><br><br>
+        <a href="../../Downloadable%20Unity%20Games/Birthday%20Analysis.zip" download="Birthday Analysis" class="DownloadLink">
+            <button class="DownloadExeZip">Download Project Exe as Zip Folder</button>
+        </a><br><br>
+
+        <h2 class="ProjectName">Random 3D Maze</h2>
+        <p class="ProjectDescription">As my first 3D game, this was a prototype to see how far I could push my own personal game development. Many of the challenges I dealth with working on this improved my knowledge of game development. Some of these included the maze generation algorithms, memory (RAM) usage, animations, and effects. Much of what I learned here went into the game development projects, as I finished this at some point during a semester where I was taking one of the two game development courses in uni.
+        </p>
+        <iframe class="ProjectVideo"
+                src="https://www.youtube.com/embed/cvvRWUAtGp4?si=cCJgPOzbSUSX88sx"
+                title="YouTube video player"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe><br><br>
+        <a href="../../Downloadable%20Unity%20Games/Random%203D%20Maze.zip" download="Random 3D Maze Generator" class="DownloadLink">
+            <button class="DownloadExeZip">Download Project Exe as Zip Folder</button>
+        </a><br><br>
+     </main>
+
+    <!--section for the bottom footer content of the page-->
+    <footer class="footer">
+        <a href="../../Index.html" class="footerHomeLink">Home</a>
+        <a href="UnityHome.html#PageTop" class="footerHomeLink">Return to the Top of the Page</a>
+        <a href="https://www.youtube.com/channel/UCbKlNm4xa34uEjZrPKJBRsQ" class="footerHomeLink">
+            <img src="../../Images/YouTube%20Logo.jpg" alt="Link to my Youtube Channel" class="footerImage">
+        </a>
+        <a href="https://www.linkedin.com/in/hunter-arcement-a67104280" class="footerHomeLink">
+            <img src="../../Images/LinkedIn%20Logo.jpg" alt="Link to my LinkedIn Page (Business Inquiries Only)" class="footerImage">
+        </a>
+
+        <p id="footerCopyright">Copyright 2025 &#169;</p>
+    </footer>
+
+</body>
+
+</html>
