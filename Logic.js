@@ -151,46 +151,63 @@ const videos =
         new Video("Custom MIPS Assembler in Python", "https://www.youtube.com/embed/97EkooneuHE?si=Tx7DZsFKpmKTL7wt")
     ];
 
-//function to give the user a random video
+let isVideoLoading = false; //throttle flag
+
 function RandomVideo()
 {
-    //if there is no iframe on the page yet
-    if(document.getElementById("homeVideo") == null)
-    {
-        //create the iframe
-        let videoFrame = document.createElement("iframe");
-        videoFrame.setAttribute("id", "homeVideo");
-        videoFrame.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
-        videoFrame.setAttribute("width", "strict-origin-when-cross-origin");
-        videoFrame.setAttribute("height", "strict-origin-when-cross-origin");
-        videoFrame.setAttribute("allowfullscreen", "true");
-        videoFrame.setAttribute("title", "YouTube video player");
+        if (isVideoLoading) return; //ignore if already processing
+        isVideoLoading = true;
 
-        //create the video header
-        let videoHeader = document.createElement("h3");
-        videoHeader.setAttribute("id", "homeVideoHeader");
-            videoHeader.setAttribute("class", "homeVideoHeader");
+        const homeMain = document.getElementById("HomeMain");
+        let videoFrame = document.getElementById("homeVideo");
+        let videoHeader = document.getElementById("homeVideoHeader");
 
-        //add both to the main
-        document.getElementById("HomeMain").appendChild(videoHeader);
-            document.getElementById("HomeMain").appendChild(document.createElement("br"));
-        document.getElementById("HomeMain").appendChild(videoFrame);
-    }
+        //if iframe doesn't exist, create it
+        if (!videoFrame)
+        {
+                videoFrame = document.createElement("iframe");
+                videoFrame.id = "homeVideo";
+                videoFrame.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
+                videoFrame.setAttribute("allowfullscreen", "true");
+                videoFrame.setAttribute("title", "YouTube video player");
+                videoFrame.width = "560";
+                videoFrame.height = "315";
 
-    //regardless at this point there is an iframe on the page
-    //get the current video object
-    const currentVideo = new Video(
-        document.getElementById("homeVideoHeader").innerText,
-        document.getElementById("homeVideo").getAttribute("src"));
+                videoHeader = document.createElement("h3");
+                videoHeader.id = "homeVideoHeader";
+                videoHeader.className = "homeVideoHeader";
 
-    //get a random video object, set the video header to the name and the iframe src to the link
-    let randomVideo = videos[Math.floor(Math.random() * videos.length)];
-    while(randomVideo.Name === currentVideo.Name && randomVideo.Link === currentVideo.Link)
-    {
-        let randomVideo = videos[Math.floor(Math.random() * videos.length)];
-    }
+                homeMain.appendChild(videoHeader);
+                homeMain.appendChild(document.createElement("br"));
+                homeMain.appendChild(videoFrame);
+        }
 
-    //set the values of the attributes on the page here
-    document.getElementById("homeVideoHeader").innerText = randomVideo.Name;
-    document.getElementById("homeVideo").setAttribute("src", randomVideo.Link)
+        const currentVideo = new Video(
+            videoHeader.innerText,
+            videoFrame.getAttribute("src")
+        );
+
+        let randomVideo;
+        const maxAttempts = 10;
+        let attempts = 0;
+
+        do
+        {
+                randomVideo = videos[Math.floor(Math.random() * videos.length)];
+                attempts++;
+        } while
+            (
+            randomVideo.Name === currentVideo.Name &&
+            randomVideo.Link === currentVideo.Link &&
+            attempts < maxAttempts
+            );
+
+        videoHeader.innerText = randomVideo.Name;
+        videoFrame.setAttribute("src", randomVideo.Link);
+
+        //wait a bit to avoid spamming
+        setTimeout(() =>
+        {
+                isVideoLoading = false;
+        }, 1000); //1 second debounce
 }
