@@ -150,7 +150,7 @@ const videos =
         new Video("Car Dealership DBMS w/ WPF", "https://www.youtube.com/embed/VBJjLyopTgY?si=9SBtpISSMKOxGmTx"),
         new Video("Custom MIPS Assembler in Python", "https://www.youtube.com/embed/97EkooneuHE?si=Tx7DZsFKpmKTL7wt"),
         new Video("Chess Game Showcase", "https://www.youtube.com/embed/lhjauQM_j7E?si=37cBx7WHE5Bv0odD"),
-        new Video("Youtube Channel Website Showcase", "")
+        new Video("Youtube Channel Website Showcase", "https://www.youtube.com/embed/ft0qs8eZj6U?si=FKEtMPCcGRDv3-sl")
     ];
 
 let isVideoLoading = false; //throttle flag
