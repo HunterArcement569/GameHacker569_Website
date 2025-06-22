@@ -402,3 +402,8 @@
 
 "Custom MIPS Assembler in Python"
 "https://www.youtube.com/embed/97EkooneuHE?si=Tx7DZsFKpmKTL7wt"
+
+"Chess Game Showcase"
+"https://www.youtube.com/embed/lhjauQM_j7E?si=37cBx7WHE5Bv0odD"
+
+"Youtube Channel Website Showcase"
