@@ -152,7 +152,8 @@ const videos =
         new Video("Chess Game Showcase", "https://www.youtube.com/embed/lhjauQM_j7E?si=37cBx7WHE5Bv0odD"),
         new Video("Youtube Channel Website Showcase", "https://www.youtube.com/embed/ft0qs8eZj6U?si=FKEtMPCcGRDv3-sl"),
         new Video("Cursed C#", "https://www.youtube.com/embed/EG5KhUePHNY?si=9mGH9x_7jhNce0G8"),
-        new Video("Python -- But Cursed", "https://www.youtube.com/embed/PsBiB7D1XRQ?si=X-mwQ4TyrWMBddgG")
+        new Video("Python -- But Cursed", "https://www.youtube.com/embed/PsBiB7D1XRQ?si=X-mwQ4TyrWMBddgG"),
+        new Video("Electric Marimba Company -- Sprint Boot", "https://www.youtube.com/embed/ZSsaJQfseMw?si=2HOQ3NGEuNBRTM51")
     ];
 
 let isVideoLoading = false; //throttle flag
