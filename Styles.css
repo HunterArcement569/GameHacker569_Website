@@ -356,6 +356,30 @@ iframe.ProjectVideo
     margin-top: 1.37vh;
     margin-bottom: 3.42vh;
 }
+@Media (orientation: portrait)
+{
+    iframe.ProjectVideo
+    {
+        width: 54.79vw;
+        height: 26.04vh;
+        align-content: center;
+        justify-self: center;
+        margin-top: 1.37vh;
+        margin-bottom: 3.42vh;
+    }
+}
+@Media (max-width: 1000px) and (max-height: 700px)
+{
+    iframe.ProjectVideo
+    {
+        width: 26.04vw;
+        height: 26.04vh;
+        align-content: center;
+        justify-self: center;
+        margin-top: 1.37vh;
+        margin-bottom: 3.42vh;
+    }
+}
 iframe.ProjectVideo:hover
 {
     transition-duration: 1s;
