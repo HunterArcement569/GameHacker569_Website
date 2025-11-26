@@ -309,8 +309,8 @@ h3.homeVideoHeader:hover
 }
 #homeVideo
 {
-    width: 26.04vw;
-    height: 54.79vh;
+    width: 28vw;
+    height: 55vh;
     align-content: center;
     justify-self: center;
     margin-top: 1.37vh;
@@ -534,6 +534,20 @@ button.DownloadExeZip:hover
         margin-top: 1vh;
         margin-bottom: 2vh;
     }
+    #homeVideo
+    {
+        width: 55vw;
+        height: 28vh;
+        align-content: center;
+        justify-self: center;
+        margin-top: 1.37vh;
+        margin-bottom: 3.42vh;
+    }
+    #homeVideo:hover
+    {
+        transition-duration: 1s;
+        transform: scale(1.0);
+    }
 
     /*footer overrides*/
     footer.footer
@@ -723,6 +737,20 @@ button.DownloadExeZip:hover
         margin-top: 1vh;
         margin-bottom: 2vh;
     }
+    #homeVideo
+    {
+        width: 28vw;
+        height: 28vh;
+        align-content: center;
+        justify-self: center;
+        margin-top: 1.37vh;
+        margin-bottom: 3.42vh;
+    }
+    #homeVideo:hover
+    {
+        transition-duration: 1s;
+        transform: scale(1.0);
+    }
 
     /*footer overrides*/
     footer.footer
@@ -911,6 +939,20 @@ button.DownloadExeZip:hover
         justify-self: center;
         margin-top: 1vh;
         margin-bottom: 2vh;
+    }
+    #homeVideo
+    {
+        width: 28vw;
+        height: 42vh;
+        align-content: center;
+        justify-self: center;
+        margin-top: 1.37vh;
+        margin-bottom: 3.42vh;
+    }
+    #homeVideo:hover
+    {
+        transition-duration: 1s;
+        transform: scale(1.0);
     }
 
     /*footer overrides*/
