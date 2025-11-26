@@ -387,7 +387,7 @@ button.DownloadExeZip:hover
 }
 
 /*portrait screen overrides*/
-@Media (orientation: portrait)
+@media (orientation: portrait)
 {
     /*navbar overrides*/
     nav.navbar
