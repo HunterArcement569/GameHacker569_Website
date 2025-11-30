@@ -373,13 +373,15 @@ a.InWebsiteLink
 }
 button.DownloadExeZip
 {
-    font-size: 1.25rem;
+    font-size: 1.25vw;
     font-weight: bold;
     color: black;
     background-color: lightgray;
     border-color: black;
-    border-width: 0.31rem;
+    border-width: 0.31vw;
     transition: 0.2s;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 button.DownloadExeZip:hover
 {
@@ -992,5 +994,25 @@ button.DownloadExeZip:hover
         color: white;
         margin-left: 2vw;
         font-size: 2vw;
+    }
+}
+
+/*smaller than ipad portrait screen overrides (1px smaller than ipad mini on both dimensions)*/
+@media (max-height: 1023px) and (orientation: portrait)
+{
+    .DownloadLink
+    {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    button.DownloadExeZip
+    {
+        font-size: 1.5vh;
+        font-weight: bold;
+        color: black;
+        background-color: lightgray;
+        border-color: black;
+        border-width: 0.31vh;
+        transition: 0.2s;
     }
 }
